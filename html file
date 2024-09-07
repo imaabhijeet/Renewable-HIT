@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renewable Energy Management Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Renewable Energy</div>
+            <ul class="nav-links">
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#calculator">Carbon Calculator</a></li>
+                <li><a href="#marketplace">Marketplace</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="dashboard">
+        <h1>Energy Management Dashboard</h1>
+        <div class="dashboard-grid">
+            <div class="card">
+                <h3>Current Energy Usage</h3>
+                <div id="energyUsage">Loading...</div>
+            </div>
+            <div class="card">
+                <h3>Renewable Energy Production</h3>
+                <div id="energyProduction">Loading...</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="calculator">
+        <h1>Carbon Footprint Calculator</h1>
+        <form id="carbonForm">
+            <label for="electricity">Electricity Usage (kWh):</label>
+            <input type="number" id="electricity" name="electricity">
+            <label for="fuel">Fuel Consumption (L):</label>
+            <input type="number" id="fuel" name="fuel">
+            <button type="submit">Calculate</button>
+        </form>
+        <div id="carbonResult"></div>
+    </section>
+
+    <section id="marketplace">
+        <h1>Renewable Energy Marketplace</h1>
+        <p>Buy or sell renewable energy directly from others in your community.</p>
+        <button id="exploreMarketplace">Explore Marketplace</button>
+    </section>
+
+    <footer>
+        <p>© 2024 Renewable Energy Platform. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
