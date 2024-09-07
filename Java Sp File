@@ -1,0 +1,27 @@
+// Simulate real-time energy data
+document.addEventListener('DOMContentLoaded', () => {
+    // Example energy usage and production data
+    const energyUsage = 1200; // kWh
+    const energyProduction = 1500; // kWh
+
+    // Display data on the dashboard
+    document.getElementById('energyUsage').textContent = `${energyUsage} kWh`;
+    document.getElementById('energyProduction').textContent = `${energyProduction} kWh`;
+
+    // Carbon Footprint Calculator
+    const carbonForm = document.getElementById('carbonForm');
+    carbonForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        const electricity = document.getElementById('electricity').value;
+        const fuel = document.getElementById('fuel').value;
+
+        // Simple carbon calculation (fictional example)
+        const carbonFootprint = (electricity * 0.5) + (fuel * 2.3);
+        document.getElementById('carbonResult').textContent = `Your carbon footprint is approximately ${carbonFootprint.toFixed(2)} kg of CO2.`;
+    });
+
+    // Marketplace button functionality
+    document.getElementById('exploreMarketplace').addEventListener('click', () => {
+        alert('Marketplace is under development. Stay tuned!');
+    });
+});
